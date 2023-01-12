@@ -1,0 +1,36 @@
+<main>
+    <div class="container" *ngIf="showHome;else showGame">
+        <app-header></app-header>
+        <h1>Scavenger Hunt AR experience</h1>
+        <p class="paragraph">
+            Scan the marker image to load the experience and collect coins. Each color has a different score. Catch them all!
+        </p>
+        <div class="coins">
+            <div class="coin-card">
+                <svg-icon class="coin" src="assets/blue.svg"></svg-icon>
+                <p class="coin-color blue">blue</p>
+                <p class="coin-points">150pts</p>
+            </div>
+            <div class="coin-card">
+                <svg-icon class="coin" src="assets/red.svg"></svg-icon>
+                <p class="coin-color red">red</p>
+                <p class="coin-points">250pts</p>
+            </div>
+            <div class="coin-card">
+                <svg-icon class="coin" src="assets/gold.svg"></svg-icon>
+                <p class="coin-color gold">gold</p>
+                <p class="coin-points">500pts</p>
+            </div>
+        </div>
+        <button class="btn" (click)="initGame()">
+    Let's play!
+</button>
+    </div>
+    <ng-template #showGame>
+        <svg-icon (click)="goBack()" class="back" src="assets/back.svg"></svg-icon>
+        <button type="button" disabled class="action-button">
+        Scan the marker to load the experience
+    </button>
+    </ng-template>
+    <svg-icon class="loading" *ngIf="loading" src="assets/loading.svg"></svg-icon>
+</main>

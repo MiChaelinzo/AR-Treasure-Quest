@@ -1,0 +1,22 @@
+<div class="container">
+    <app-header></app-header>
+    <main>
+        <h2>{{text}}</h2>
+        <div class="coin-image">
+            <svg-icon src='assets/stars.svg'></svg-icon>
+            <svg-icon class="coin" [src]="'assets/'+((repeated)?'disabled':coinColor)+'.svg'" [svgStyle]="{ 'width.px':64,'height.px': 64 }"></svg-icon>
+            <p class="points">
+                +{{pointsAdded}} pts
+            </p>
+        </div>
+        <p class="paragraph">
+            {{paragraph}}
+        </p>
+        <div class="line"></div>
+        <div class="total-score">
+            <h3 class="uppercase">total score</h3>
+            <h3 class="bold-900">{{score}} pts</h3>
+        </div>
+        <div class="line"></div>
+    </main>
+</div>
