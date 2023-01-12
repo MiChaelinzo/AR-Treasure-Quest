@@ -1,6 +1,6 @@
 # Scavenger Hunt AR experience
 
-This repository contains a sample project of an **augmented reality scavenger hunt** made with [Onirix WebAR SDK](https://docs.onirix.com/onirix-sdk/web-ar).
+
 
 Game mechanics are simple. Users will be encouraged to look for hidden pictures that will launch the experience through an embedded QR Code. Once the experience loads:
 
