@@ -1,0 +1,28 @@
+<div class="container">
+    <app-header [img]="'scavenger-hunt-white.svg'"></app-header>
+    <form [formGroup]="form" class="register-form" autocomplete="off">
+        <label class="label-out">Fill in the fields to register</label>
+        <div class="form-group">
+            <input [ngClass]="{ 'untouched': !touched('name'), 'valid': touched('name') && validInput('name'), 'invalid': validateField('name') }" type="text" formControlName="name" name="name" id="name" placeholder="Enter your name"><br/>
+            <div *ngIf="validateField('name')" class="legend validation">field required</div>
+            <div [ngClass]="{ 'untouched': !touched('name'), 'valid': validInput('name') && touched('name'), 'invalid': validateField('name') }" class="legend title">name</div>
+        </div>
+        <div class="form-group">
+            <input [ngClass]="{ 'untouched': !touched('lastName'), 'valid': touched('lastName') && validInput('lastName'), 'invalid': validateField('lastName') }" type="text" formControlName="lastName" name="lastName" id="lastName" placeholder="Enter your last name"><br/>
+            <div *ngIf="validateField('lastName')" class="legend validation">field required</div>
+            <div [ngClass]="{ 'untouched': !touched('lastName'), 'valid': validInput('lastName') && touched('lastName'), 'invalid': validateField('lastName') }" class="legend title">last name</div>
+        </div>
+        <div class="form-group">
+            <input [ngClass]="{ 'untouched': !touched('email'), 'valid': touched('email') && validInput('email'), 'invalid': validateField('email') }" type="text" formControlName="email" name="email" id="email" placeholder="Enter a valid email"><br/>
+            <div *ngIf="validateField('email')" class="legend validation">field required</div>
+            <span *ngIf="repeatedEmail" class="error">Email already registered</span>
+            <div [ngClass]="{ 'untouched': !touched('email'), 'valid': validInput('email') && touched('email'), 'invalid': validateField('email') }" class="legend title">email</div>
+        </div>
+        <div class="check">
+            <input formControlName="terms" class="checkbox" type="checkbox" name="terms" id="terms">
+            <span (click)="check_uncheck()" [ngClass]="{'checkbox-unchecked': !form.controls.terms.value,'checkbox-checked': form.controls.terms.value}" class="custom-checkbox"></span>
+            <span class="label-checkbox">I accept the <a href="#">terms and conditions</a></span>
+        </div>
+        <button type="button" class="btn-register" [ngClass]="{'invalid': form.invalid && form.touched}" [disabled]="form.invalid || validateTerms()" (click)="validateForm()">{{(form.invalid && form.touched)?'Check the fields':'Get started'}}</button>
+    </form>
+</div>

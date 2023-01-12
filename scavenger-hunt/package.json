@@ -1,0 +1,39 @@
+{
+  "name": "onirix-scavenger-hunt",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ng serve",
+    "build": "ng build",
+    "lint": "ng lint"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~12.0.0",
+    "@angular/common": "~12.0.0",
+    "@angular/compiler": "~12.0.0",
+    "@angular/core": "~12.0.0",
+    "@angular/forms": "~12.0.0",
+    "@angular/platform-browser": "~12.0.0",
+    "@angular/platform-browser-dynamic": "~12.0.0",
+    "@angular/router": "~12.0.0",
+    "@types/howler": "^2.2.3",
+    "@types/three": "^0.128.0",
+    "angular-svg-icon": "^11.2.0",
+    "gsap": "^3.6.1",
+    "howler": "^2.2.3",
+    "rxjs": "~6.6.0",
+    "three": "^0.128.0",
+    "tslib": "^2.0.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^12.0.0",
+    "@angular/cli": "~12.0.0",
+    "@angular/compiler-cli": "~12.0.0",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^6.0.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~4.2.4"
+  }
+}

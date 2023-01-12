@@ -1,0 +1,164 @@
+.error {
+    color: #ff5800;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.register-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 23px;
+}
+
+.label-out {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-group {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 30px;
+    height: 54px;
+    position: relative;
+}
+
+.form-group .legend {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    top: -7px;
+    padding: 0 5px;
+    background-color: #ffffff;
+}
+
+.form-group .legend.title {
+    left: 23px;
+}
+
+.form-group .legend.validation {
+    right: 18px;
+    color: #ff5800;
+}
+
+.form-group input {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 15px;
+}
+
+.form-group input::placeholder {
+    font-style: italic;
+}
+
+
+/* Untouched input */
+
+.legend.title.untouched {
+    color: #580088;
+}
+
+input.untouched {
+    border: 1px solid #580088;
+}
+
+
+/* Valid input */
+
+.legend.title.valid {
+    color: #00dac5;
+}
+
+input.valid {
+    border: 1px solid #00dac5;
+}
+
+
+/* Invalid input */
+
+.legend.title {
+    padding: 0;
+}
+
+.legend.title.invalid {
+    color: #ff5800;
+}
+
+input.invalid {
+    border: 1px solid #ff5800;
+}
+
+input:focus {
+    outline: none;
+}
+
+.check {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.check input {
+    display: none;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.checkbox-unchecked {
+    background-image: url('../../assets/check.svg');
+}
+
+.checkbox-checked {
+    background-image: url('../../assets/check-marked.svg');
+}
+
+.label-checkbox {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.label-checkbox a {
+    text-decoration: none;
+    color: #580088;
+}
+
+.btn-register {
+    margin-top: 30px;
+    font-size: 17px;
+    width: 100%;
+    height: 51px;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    background-color: #f32579;
+    color: #ffffff;
+}
+
+.btn-register:disabled {
+    background-color: #f1f3fe;
+}
+
+button.invalid {
+    color: #ff5800;
+}

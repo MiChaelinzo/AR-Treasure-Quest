@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 8</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="OX_SH-Login-validation" transform="translate(-29.000000, -598.000000)">
+            <g id="Group-5" transform="translate(30.000000, 310.000000)">
+                <g id="Group-8" transform="translate(0.000000, 289.000000)">
+                    <rect id="Rectangle" stroke="#00DAC5" fill="#00DAC5" x="0" y="0" width="30" height="30" rx="15"></rect>
+                    <path d="M19.1197439,9.5259528 C19.3816599,9.03972402 19.9881512,8.85788264 20.4743799,9.1197987 C20.9258781,9.36300647 21.1149197,9.90332242 20.9299175,10.3685715 L20.880534,10.4744348 L15.4938503,20.4744348 C15.240409,20.9449308 14.6676811,21.1271063 14.195098,20.9086072 L14.088009,20.8510206 L9.47469271,18.0019687 C9.00479404,17.7117728 8.8591162,17.0955944 9.14931214,16.6256957 C9.4187798,16.1893612 9.9693242,16.0325845 10.4228257,16.2447611 L10.5255852,16.3003151 L14.2351389,18.5911938 L19.1197439,9.5259528 Z" id="check" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

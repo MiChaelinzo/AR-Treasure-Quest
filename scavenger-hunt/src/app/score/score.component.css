@@ -1,0 +1,87 @@
+body {
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 360px;
+    height: 640px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+}
+
+.coin-image {
+    height: 90px;
+    width: 300px;
+    margin: 25px 0;
+    border-radius: 40px;
+    background-color: #f1f3fe;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.stars {
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.coin {
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    width: 64px;
+    height: 64px;
+}
+
+.points {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 24px;
+    right: 30px;
+    color: #580088;
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+.line {
+    height: 1px;
+    background-color: #616991;
+    opacity: 0.22;
+}
+
+.total-score {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #580088;
+}
+
+h3 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold-900 {
+    font-weight: 800;
+}
