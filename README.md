@@ -49,8 +49,6 @@ After that, the camera will show up and a coin will appear once a game image is 
 
 The coin that is rendered depends on the parameters sent in the URL. You can tweak coin points and colors from *constants.ts* file. 
 
-This component, uses a 3D library (three.js), combined with **Onirix Web AR SDK** to create the AR experience. For more information, see https://docs.onirix.com/onirix-sdk/web-ar.
-
 ### Register Component
 
 This component uses the *ReactiveFormsModule* to evaluate form's validity (all fields are required, the email must have a valid email format and terms must be accepted).
